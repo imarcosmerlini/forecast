@@ -3,8 +3,8 @@
 import { useState } from 'react'
 import { WeatherCard } from './WeatherCard'
 import { api } from '@/lib/api'
-import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import { ToastContainer } from 'react-toastify'
 
 export function WeatherNow({ weather, savedCallback }) {
   const [saved, setSaved] = useState(false)
@@ -15,7 +15,7 @@ export function WeatherNow({ weather, savedCallback }) {
   }
 
   async function saveWeather() {
-    const response = await api.post('/weather', { weather })
+    await api.post('/weather', { weather })
     handleSaved(true)
   }
 

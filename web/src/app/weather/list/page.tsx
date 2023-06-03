@@ -1,6 +1,6 @@
 'use client'
 
-import { FormEvent, useEffect, useState } from 'react'
+import { FormEvent, useState } from 'react'
 import { WeatherCard } from '@/components/WeatherCard'
 import { api } from '@/lib/api'
 
@@ -12,7 +12,6 @@ export default function ListWeather() {
 
   async function handleSearch(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
-    console.log('<>Buscou no histórico!<>')
 
     const response = await api.get('/weather/history', {
       params: {

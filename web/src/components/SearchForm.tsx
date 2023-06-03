@@ -22,14 +22,12 @@ export function SearchForm({ weatherCallback }) {
     }
 
     const response = await viaCep.get(`${value.trim()}/json`)
-    console.log('<>Buscou o CEP!<>')
     setCity(response.data.localidade)
   }
 
   async function handleSearchWeather() {
     if (city || postalCode) {
       try {
-        console.log(city, postalCode)
         const response = await api.get('/weather', {
           params: {
             city,
