@@ -5,7 +5,7 @@ Neste projeto segui a organização de pastas e arquivos sugeridas pelo React.
 # Considerações importantes
 
 ## Configurar chave da Api
-Adicionar a chave da api no arquivo ```server/.env``` na variável ```WEATHER_STACK_SECRET```
+Adicionar a chave da api no arquivo ```server/.env``` na variável ```WEATHER_STACK_SECRET```.
 
 ### Uso da Api paga
 Descomentar a chamada da api no arquivo [weather.ts](./server/src/routes/weather.ts) e utilizá-la para ter acesso a função hora a hora da  versão paga.
