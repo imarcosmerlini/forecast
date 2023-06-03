@@ -1,0 +1,40 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Search {
+  id         String   @id @default(uuid())
+  postalCode String
+  city       String
+  createdAt  DateTime @default(now())
+}
+
+model Weather {
+  id              String   @id @default(uuid())
+  observationtime String
+  date            String
+  name            String
+  temperature     Int
+  descriptions    String
+  feelslike       Int
+  sunrise         String
+  sunset          String
+  maxtemp         Int
+  mintemp         Int
+  humidity        Int
+  visibility      Int
+  precip          Int
+  winddir         String
+  windspeed       Int
+  uvindex         Int
+  moonphase       String
+  createdAt       DateTime @default(now())
+}
