@@ -1,0 +1,59 @@
+{
+  "request": {
+    "type": "City",
+    "query": "Chapecó, Brasil",
+    "language": "en",
+    "unit": "m"
+  },
+  "location": {
+    "name": "Chapecó",
+    "country": "Brasil",
+    "region": "Santa Catarina",
+    "lat": "-27.083",
+    "lon": "-52.983",
+    "timezone_id": "America/Sao_Paulo",
+    "localtime": "2024-06-06 19:03",
+    "localtime_epoch": 1717700580,
+    "utc_offset": "-3.0"
+  },
+  "current": {
+    "observation_time": "10:03 PM",
+    "temperature": 23,
+    "weather_code": 113,
+    "weather_icons": [
+      "https://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0008_clear_sky_night.png"
+    ],
+    "weather_descriptions": ["Clear"],
+    "wind_speed": 4,
+    "wind_degree": 40,
+    "wind_dir": "NE",
+    "pressure": 1021,
+    "precip": 0,
+    "humidity": 65,
+    "cloudcover": 0,
+    "feelslike": 25,
+    "uv_index": 1,
+    "visibility": 10,
+    "is_day": "no"
+  },
+  "forecast": {
+    "2024-06-05": {
+      "date": "2024-06-05",
+      "date_epoch": 1717545600,
+      "astro": {
+        "sunrise": "07:16 AM",
+        "sunset": "05:46 PM",
+        "moonrise": "06:17 AM",
+        "moonset": "04:52 PM",
+        "moon_phase": "Waning Crescent",
+        "moon_illumination": 3
+      },
+      "mintemp": 15,
+      "maxtemp": 26,
+      "avgtemp": 19,
+      "totalsnow": 0,
+      "sunhour": 10,
+      "uv_index": 4
+    }
+  }
+}
